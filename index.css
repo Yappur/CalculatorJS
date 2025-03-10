@@ -1,22 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(197, 227, 255);
+  background: linear-gradient(135deg, #d4c1e9, #2251a3);
+  min-height: 100vh;
 }
 
 .containerGeneral {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 form {
-  background-color: rgb(88, 88, 87);
+  background: rgba(133, 133, 133, 0.9);
+  padding: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.788);
 }
 
 input[type="button"] {
   width: 60px;
   height: 60px;
+  border-radius: 25px;
+  margin: 3px;
+  border: none;
+
   color: #bfcbe9;
   font-size: 18px;
   font-weight: lighter;
@@ -24,7 +39,7 @@ input[type="button"] {
 }
 
 input[type="text"] {
-  width: 248px;
+  width: 280px;
   height: 40px;
   border: none;
   background-color: rgb(31, 31, 30);
@@ -37,6 +52,7 @@ input[type="button"].arit {
 
 input[type="button"].igual {
   background-color: rgba(138, 253, 138, 0.575);
+  color: black;
 }
 
 input[type="button"].clear {
@@ -48,15 +64,19 @@ input[type="button"].numeros {
 }
 
 input[type="button"]:hover {
-  background-color: slategray;
+  background: linear-gradient(135deg, #414042, #9da1a8);
   cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.788);
 }
 
 input[name="txtcaja1"] {
   height: 20px;
   font-size: 16px;
+  text-align: right;
 }
 
 input[name="txtcaja2"] {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+
+  text-align: right;
 }
