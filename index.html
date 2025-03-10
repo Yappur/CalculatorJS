@@ -7,7 +7,103 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Calculadora</h1>
+    <div class="containerGeneral">
+      <h1>Calculadora</h1>
+      <form name="f1">
+        <br />
+        <input type="text" name="txtcaja1" />
+        <br />
+        <input type="text" name="txtcaja2" value="0" />
+        <br />
+        <input type="button" class="clear" onclick="" value="CE" />
+        <input type="button" class="clear" onclick="" value="C" />
+        <input
+          type="button"
+          class="clear"
+          onclick="deleteCaracter()"
+          value="⌫"
+        />
+
+        <input type="button" class="arit" onclick="" value="÷" />
+        <br />
+
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="7"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="8"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="9"
+        />
+        <input type="button" class="arit" onclick="" value="X" />
+        <br />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="4"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="5"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="6"
+        />
+        <input type="button" class="arit" onclick="" value="-" />
+        <br />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="1"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="2"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="3"
+        />
+        <input type="button" class="arit" onclick="" value="+" />
+        <br />
+        <input type="button" class="numeros" onclick="" value="√" />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="0"
+        />
+        <input
+          type="button"
+          class="numeros"
+          onclick="escribir(this.value)"
+          value="."
+        />
+        <input type="button" class="igual" onclick="" value="=" />
+      </form>
+    </div>
+
     <script src="calculadora.js"></script>
   </body>
 </html>
