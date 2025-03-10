@@ -24,7 +24,7 @@
           value="⌫"
         />
 
-        <input type="button" class="arit" onclick="" value="÷" />
+        <input type="button" class="arit" onclick="arit('/')" value="÷" />
         <br />
 
         <input
@@ -45,7 +45,7 @@
           onclick="escribir(this.value)"
           value="9"
         />
-        <input type="button" class="arit" onclick="" value="X" />
+        <input type="button" class="arit" onclick="arit('*')" value="x" />
         <br />
         <input
           type="button"
@@ -65,7 +65,7 @@
           onclick="escribir(this.value)"
           value="6"
         />
-        <input type="button" class="arit" onclick="" value="-" />
+        <input type="button" class="arit" onclick="arit('-')" value="-" />
         <br />
         <input
           type="button"
@@ -85,9 +85,9 @@
           onclick="escribir(this.value)"
           value="3"
         />
-        <input type="button" class="arit" onclick="" value="+" />
+        <input type="button" class="arit" onclick="arit('+')" value="+" />
         <br />
-        <input type="button" class="numeros" onclick="" value="√" />
+        <input type="button" class="numeros" onclick="raiz()" value="√" />
         <input
           type="button"
           class="numeros"
@@ -100,7 +100,7 @@
           onclick="escribir(this.value)"
           value="."
         />
-        <input type="button" class="igual" onclick="" value="=" />
+        <input type="button" class="igual" onclick="calcular()" value="=" />
       </form>
     </div>
 
